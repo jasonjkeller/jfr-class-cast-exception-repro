@@ -53,5 +53,5 @@ java.lang.ClassCastException: class jdk.jfr.consumer.RecordedObject cannot be ca
 
 ## Usage
 
-To build jar: `mvn clean package`
-To run jar: `java -jar target/jfr-class-cast-exception-repro-0.0.1-SNAPSHOT.jar`
+To build jar: `mvn clean package`  
+To run jar: `java -jar target/jfr-class-cast-exception-repro-0.0.1-SNAPSHOT.jar`  
