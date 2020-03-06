@@ -1,4 +1,4 @@
-# ClassCastException Repro
+# JFR ClassCastException Repro
 
 Consumes JFR Events defined in `ClassCastExceptionDebugProfile.jfc`. Reproduces a `ClassCastException` with Java Flight 
 Recorder events.
