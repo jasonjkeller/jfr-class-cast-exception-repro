@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration version="2.0" label="ClassCastExceptionDebugProfile" description="Debugging ClassCastException: class jdk.jfr.consumer.RecordedObject cannot be cast to class jdk.jfr.consumer.RecordedThread" provider="New Relic">
+
+  <event name="jdk.ObjectAllocationInNewTLAB">
+    <setting name="enabled">true</setting>
+    <setting name="stackTrace">true</setting>
+  </event>
+
+  <event name="jdk.ObjectAllocationOutsideTLAB">
+    <setting name="enabled">true</setting>
+    <setting name="stackTrace">true</setting>
+  </event>
+
+  <event name="jdk.AllocationRequiringGC">
+      <setting name="enabled">true</setting>
+      <setting name="stackTrace">true</setting>
+  </event>
+
+</configuration>
