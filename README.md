@@ -50,3 +50,8 @@ java.lang.ClassCastException: class jdk.jfr.consumer.RecordedObject cannot be ca
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
 ```
+
+## Usage
+
+To build jar: `mvn clean package`
+To run jar: `java -jar target/jfr-class-cast-exception-repro-0.0.1-SNAPSHOT.jar`

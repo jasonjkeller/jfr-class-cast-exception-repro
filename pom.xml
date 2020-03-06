@@ -22,22 +22,6 @@
     </repositories>
 
     <dependencies>
-        <!--https://oss.sonatype.org/service/local/repositories/snapshots/content/org/openjdk/jmc/-->
-        <dependency>
-            <groupId>org.openjdk.jmc</groupId>
-            <artifactId>flightrecorder</artifactId>
-            <version>8.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjdk.jmc</groupId>
-            <artifactId>flightrecorder.rules</artifactId>
-            <version>8.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjdk.jmc</groupId>
-            <artifactId>flightrecorder.rules.jdk</artifactId>
-            <version>8.0.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <properties>
@@ -48,6 +32,18 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>repro.example.ClassCastExceptionRepro</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
